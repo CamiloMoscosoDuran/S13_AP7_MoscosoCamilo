@@ -23,7 +23,7 @@
           <img [src]="juego.imagen" [alt]="juego.nombre">
         </div>
         <div class="juego-info">
-          <span class="juego-genero">{{ juego.genero }}</span>
+          <span class="juego-genero" [ngClass]="juego.genero.split(' ')[0].toLowerCase()">{{ juego.genero }}</span>
           <h3 class="juego-nombre">{{ juego.nombre }}</h3>
           <p class="juego-desc">{{ juego.desc }}</p>
           <div class="juego-meta">
